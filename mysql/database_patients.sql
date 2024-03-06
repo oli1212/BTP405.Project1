@@ -19,5 +19,5 @@ VALUES
 (123556789, '1993-01-21','Emma','Smith','EmmaSmith@gmail.com'),
 (123456389,'1998-03-18','Oscar','Li','OscarLi@gmail.com'),
 (123456289,'1996-05-13','Johnny','Shi','JohnnyShi@gmail.com'),
-(123456489, '2000-17-1', 'James', 'Mansor', 'JamesMansor@gmail.com');
+(123456489, '2000-17-01', 'James', 'Mansor', 'JamesMansor@gmail.com');
 
