@@ -17,6 +17,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.send_header('Content-Type', 'application/json')
         self.end_headers()
 
+    # Implement GET method to view all/one patient(s)
     def do_GET(self):
         if self.path == "/patients":
             cursor.execute("SELECT * FROM patients")
@@ -36,7 +37,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         else:
             self._set_headers(404)
 
-    # Implement POST method to add new notes
+    # Implement POST method to add new patients
     def do_POST(self):
         if self.path == "/patients":
             get_content_length = int(self.headers['Content-Length'])
@@ -48,8 +49,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         else:
             self._set_headers(404)
 
-
-    # Implement PUT method to update a note
+    # Implement PUT method to update a patients
     def do_PUT(self):
         if self.path.startswith("/patient"):
             patient_id = self.path.strip("/").split("/")[-1]
@@ -61,7 +61,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         else:
             self._set_headers(404)
 
-    # Implement DELETE method to delete a note
+    # Implement DELETE method to delete a patient
     def do_DELETE(self):
         patient_id = self.path.strip("/").split("/")[-1]
         cursor.execute("DELETE FROM patients WHERE PatientID = %s", (patient_id,))

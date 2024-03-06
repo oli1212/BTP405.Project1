@@ -3,7 +3,7 @@ use Hospital;
 CREATE TABLE patients(
   PatientID int not null AUTO_INCREMENT,
   ClinicNumber int unsigned NOT NULL,
-  Birthday date DEFAULT NULL,
+  Birthday varchar(100) DEFAULT NULL,
   FirstName varchar(100) DEFAULT NULL,
   Surname varchar(100) DEFAULT NULL,
   Email varchar(100) DEFAULT NULL,
@@ -19,5 +19,5 @@ VALUES
 (123556789, '1993-01-21','Emma','Smith','EmmaSmith@gmail.com'),
 (123456389,'1998-03-18','Oscar','Li','OscarLi@gmail.com'),
 (123456289,'1996-05-13','Johnny','Shi','JohnnyShi@gmail.com'),
-(123456489, '2000-17-01', 'James', 'Mansor', 'JamesMansor@gmail.com');
+(123456489, '2000-07-01', 'James', 'Mansor', 'JamesMansor@gmail.com');
 
