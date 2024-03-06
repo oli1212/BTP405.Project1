@@ -60,8 +60,8 @@ INSERT INTO PatientsAllergy (PatientID, AllergyType, PatientAllergyDesc)
 VALUES
 (2,'Food allergies', "Patient has allergies to peanut"),
 (2,'Latex allergy', "Patient showed signed of allergic react to latex condoms"),
-(5,'Dust allergies', "Patient has severe allergic reaction towards dust"),
-(6,'Animal Allergy', "Patient has allergies to dogs and cats")
+(1,'Dust allergies', "Patient has severe allergic reaction towards dust"),
+(4,'Animal Allergy', "Patient has allergies to dogs and cats")
 ;
 
 -- Creating table for lab records
