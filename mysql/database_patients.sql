@@ -30,7 +30,7 @@ CREATE TABLE PatientCred (
   patientPassword varchar(100) NOT NULL,
   UNIQUE KEY Username_UNIQUE (Username),
   UNIQUE KEY PatientID_UNIQUE (PatientID),
-  CONSTRAINT PatientID FOREIGN KEY (PatientID) REFERENCES patients (PatientID) ON DELETE CASCADE
+  CONSTRAINT PatientID FOREIGN KEY (PatientID) REFERENCES patients (PatientID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- sample insert for inserting into patientcred table
@@ -52,7 +52,7 @@ CREATE TABLE PatientsAllergy (
   PRIMARY KEY (PatientsAllergyID),
   UNIQUE KEY PatientsAllergyID_UNIQUE (PatientsAllergyID),
   KEY PatientID_idx (PatientID),
-  CONSTRAINT PatientID1 FOREIGN KEY (PatientID) REFERENCES patients (PatientID) ON DELETE CASCADE
+  CONSTRAINT PatientID1 FOREIGN KEY (PatientID) REFERENCES patients (PatientID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- sample data inserted into the PatientsAllergy table
@@ -72,7 +72,7 @@ CREATE TABLE LabRecord (
   PRIMARY KEY (LabRecordID),
   UNIQUE KEY LabRecordID_UNIQUE (LabRecordID),
   KEY PatientID2_idx (PatientID),
-  CONSTRAINT PatientID2 FOREIGN KEY (PatientID) REFERENCES patients (PatientID) ON DELETE CASCADE
+  CONSTRAINT PatientID2 FOREIGN KEY (PatientID) REFERENCES patients (PatientID) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- Insert sample data into LabRecord table
