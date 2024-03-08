@@ -6,8 +6,8 @@ To try this PHR System, You have to try all the given endpoints which are GET, P
 2. With docker installed in your computer, you run the command in the root directroy
     "docker-compose up"
 3. Now to run the server using python
-    i. run "cd python" to change directories
-    ii. run "py server.py" to run the server
+    i. run **cd python** to change directories
+    ii. run **py server.py** to run the server
    
 * To try GET: **curl http://localhost:8080/patients**
 
@@ -20,3 +20,8 @@ To try this PHR System, You have to try all the given endpoints which are GET, P
 I used Jira, for my scrum, sprints, used case, and acceptance criteria:
 https://akeshavarzi.atlassian.net/jira/software/projects/PHRPS/boards/5/backlog?assignee=712020%3A47a6393c-ee0c-460e-b223-728adff8ebea&atlOrigin=eyJpIjoiMTIxMDc3MDA5MWY3NDZjZGJlZjlhYTBmOTJmY2Q3NmMiLCJwIjoiaiJ9
 
+4. If you would like to try the front-end using react next.js first change the directory to my-app with 
+while in the root directory **cd my-app**
+then run **npm run dev**
+the frontend has a simple home page, login form, registration form, and dashboard
+    
