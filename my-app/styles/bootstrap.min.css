@@ -18,7 +18,8 @@
   height:100vh; 
 }
 
-.container{
+
+.forms{
   width: 450px;
   /* center a div insie another div*/
   display: flex;
@@ -26,4 +27,35 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  border-top: 1px solid #aaa; /* Faint line separating the footer */
+}
+
+.footer-content {
+  padding: 20px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.faint-line {
+  border-bottom: 1px solid #aaa; /* Define the faint line */
+  width: 100%; /* Make the line span the full width of its container */
+  margin-bottom: 10px; /* Adjust the margin as needed */
 }
